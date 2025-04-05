@@ -5,10 +5,10 @@ DOCKERROOT=/root
 BUILDSCRIPT=build.sh
 
 NAME=gl4es
-cd ./build-scripts/
+cd ./github-scripts/
 ./docker-setup.txt $NAME-build
 cd ..
 
 sleep 5
 
-docker exec $NAME-build /bin/bash -c "./build-scripts/build.sh"
+docker exec $NAME-build /bin/bash -c "./github-scripts/build.sh"
